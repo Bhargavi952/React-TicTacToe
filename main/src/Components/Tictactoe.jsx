@@ -61,6 +61,13 @@ function Tictactoe() {
   return (
     <>
       <StyleGameCont>
+      <div>
+     {checkWinner === "X" ? (
+        <h1>WINNER IS  X </h1>
+      ) : checkWinner === "O" ? (
+        <h1>WINNER IS O</h1>
+      ) : checkWinner === 0 ?null:null}
+     </div>
         <StyleSubGameCont>
           <div className="row">
             <SquareBoxes
